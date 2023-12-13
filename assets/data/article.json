@@ -6,7 +6,8 @@
     "Image": "image_couteau1.png",
     "Ref": "REF001",
     "Prix": "49.99",
-    "nbr": "1",
+    "Description": "Un couteau de poche pratique, idéal pour une utilisation quotidienne.",
+    "Nbr": "1",
     "Note": "5"
   },
   {
@@ -16,7 +17,8 @@
     "Image": "image_katana1.png",
     "Ref": "REF002",
     "Prix": "399.00",
-    "Nombre article restant": "2",
+    "Description": "Un katana traditionnel, symbole d'art martial et de finesse japonaise.",
+    "Nbr": "2",
     "Note": "4"
   },
   {
@@ -26,7 +28,8 @@
     "Image": "image_hache1.png",
     "Ref": "REF003",
     "Prix": "199.50",
-    "Nombre article restant": "3",
+    "Description": "Une hache de guerre imposante, parfaite pour les amateurs d'histoire militaire.",
+    "Nbr": "3",
     "Note": "3"
   },
   {
@@ -36,7 +39,8 @@
     "Image": "image_dague1.png",
     "Ref": "REF004",
     "Prix": "99.99",
-    "Nombre article restant": "4",
+    "Description": "Une dague antique pleine de mystère et d'intrigue historique.",
+    "Nbr": "4",
     "Note": "5"
   },
   {
@@ -46,7 +50,8 @@
     "Image": "image_taser1.png",
     "Ref": "REF005",
     "Prix": "299.99",
-    "Nombre article restant": "5",
+    "Description": "Un taser de sécurité, garantissant une protection personnelle moderne.",
+    "Nbr": "5",
     "Note": "2"
   },
   {
@@ -56,7 +61,8 @@
     "Image": "image_armefeu1.png",
     "Ref": "REF006",
     "Prix": "599.99",
-    "Nombre article restant": "6",
+    "Description": "Un pistolet de poche discret, adapté aux besoins de défense personnelle.",
+    "Nbr": "6",
     "Note": "4"
   },
   {
@@ -66,7 +72,8 @@
     "Image": "image_couteau2.png",
     "Ref": "REF007",
     "Prix": "79.99",
-    "Nombre article restant": "7",
+    "Description": "Un couteau de survie robuste, indispensable pour les aventuriers en plein air.",
+    "Nbr": "7",
     "Note": "5"
   },
   {
@@ -76,7 +83,8 @@
     "Image": "image_katana2.png",
     "Ref": "REF008",
     "Prix": "699.00",
-    "Nombre article restant": "8",
+    "Description": "Un katana forgé à la main, démontrant un artisanat exceptionnel.",
+    "Nbr": "8",
     "Note": "3"
   },
   {
@@ -86,7 +94,8 @@
     "Image": "image_hache2.png",
     "Ref": "REF009",
     "Prix": "299.50",
-    "Nombre article restant": "9",
+    "Description": "Une hache viking redoutable, rappelant l'époque des guerriers nordiques.",
+    "Nbr": "9",
     "Note": "4"
   },
   {
@@ -96,7 +105,8 @@
     "Image": "image_dague2.png",
     "Ref": "REF010",
     "Prix": "129.99",
-    "Nombre article restant": "10",
+    "Description": "Une dague cérémoniale, chargée d'élégance et de symbolisme.",
+    "Nbr": "10",
     "Note": "5"
   },
   {
@@ -106,7 +116,8 @@
     "Image": "image_taser2.png",
     "Ref": "REF011",
     "Prix": "399.99",
-    "Nombre article restant": "11",
+    "Description": "Un taser de défense personnelle, assurant une réaction rapide en cas de danger.",
+    "Nbr": "11",
     "Note": "4"
   },
   {
@@ -116,7 +127,8 @@
     "Image": "image_armefeu2.png",
     "Ref": "REF012",
     "Prix": "799.99",
-    "Nombre article restant": "12",
+    "Description": "Un fusil de chasse traditionnel, pour les amateurs de chasse sportive.",
+    "Nbr": "12",
     "Note": "2"
   },
   {
@@ -126,7 +138,8 @@
     "Image": "image_couteau3.png",
     "Ref": "REF013",
     "Prix": "59.99",
-    "Nombre article restant": "13",
+    "Description": "Un couteau suisse polyvalent, outil essentiel pour diverses situations.",
+    "Nbr": "13",
     "Note": "5"
   },
   {
@@ -136,7 +149,8 @@
     "Image": "image_katana3.png",
     "Ref": "REF014",
     "Prix": "299.00",
-    "Nombre article restant": "14",
+    "Description": "Un katana de décoration, parfait pour l'affichage artistique.",
+    "Nbr": "14",
     "Note": "3"
   },
   {
@@ -146,7 +160,8 @@
     "Image": "image_hache3.png",
     "Ref": "REF015",
     "Prix": "249.50",
-    "Nombre article restant": "15",
+    "Description": "Une hache cérémonielle, mélange unique de fonction et de rituel.",
+    "Nbr": "15",
     "Note": "4"
   },
   {
@@ -156,7 +171,8 @@
     "Image": "image_dague3.png",
     "Ref": "REF016",
     "Prix": "149.99",
-    "Nombre article restant": "16",
+    "Description": "Une dague de collection, témoignage d'une époque révolue.",
+    "Nbr": "16",
     "Note": "5"
   },
   {
@@ -166,7 +182,8 @@
     "Image": "image_taser3.png",
     "Ref": "REF017",
     "Prix": "249.99",
-    "Nombre article restant": "17",
+    "Description": "Un taser à impulsions électriques, offrant une protection moderne.",
+    "Nbr": "17",
     "Note": "2"
   },
   {
@@ -176,7 +193,8 @@
     "Image": "image_armefeu3.png",
     "Ref": "REF018",
     "Prix": "899.99",
-    "Nombre article restant": "18",
+    "Description": "Un pistolet automatique, pour ceux qui apprécient la technologie avancée.",
+    "Nbr": "18",
     "Note": "4"
   },
   {
@@ -186,7 +204,8 @@
     "Image": "image_couteau4.png",
     "Ref": "REF019",
     "Prix": "69.99",
-    "Nombre article restant": "19",
+    "Description": "Un couteau de cuisine professionnel, essentiel pour les chefs passionnés.",
+    "Nbr": "19",
     "Note": "3"
   },
   {
@@ -196,7 +215,8 @@
     "Image": "image_katana4.png",
     "Ref": "REF020",
     "Prix": "599.00",
-    "Nombre article restant": "20",
+    "Description": "Un katana ninja, arme emblématique des guerriers de l'ombre.",
+    "Nbr": "20",
     "Note": "5"
   },
   {
@@ -206,7 +226,8 @@
     "Image": "image_hache4.png",
     "Ref": "REF021",
     "Prix": "199.50",
-    "Nombre article restant": "21",
+    "Description": "Une hache de bûcheron robuste, parfaite pour le travail du bois.",
+    "Nbr": "21",
     "Note": null
   },
   {
@@ -216,7 +237,8 @@
     "Image": "image_dague4.png",
     "Ref": "REF022",
     "Prix": "89.99",
-    "Nombre article restant": "22",
+    "Description": "Une dague de chasse précise, idéale pour les amateurs de chasse.",
+    "Nbr": "22",
     "Note": null
   },
   {
@@ -226,7 +248,8 @@
     "Image": "image_taser4.png",
     "Ref": "REF023",
     "Prix": "179.99",
-    "Nombre article restant": "23",
+    "Description": "Un taser compact, discret et efficace pour la sécurité personnelle.",
+    "Nbr": "23",
     "Note": null
   },
   {
@@ -236,7 +259,8 @@
     "Image": "image_armefeu4.png",
     "Ref": "REF024",
     "Prix": "1499.99",
-    "Nombre article restant": "24",
+    "Description": "Un fusil sniper, conçu pour la précision à longue distance.",
+    "Nbr": "24",
     "Note": null
   },
   {
@@ -246,7 +270,8 @@
     "Image": "image_couteau5.png",
     "Ref": "REF025",
     "Prix": "129.99",
-    "Nombre article restant": "25",
+    "Description": "Un couteau de plongée fiable, essentiel pour les amateurs de plongée sous-marine.",
+    "Nbr": "25",
     "Note": null
   },
   {
@@ -256,7 +281,8 @@
     "Image": "image_katana5.png",
     "Ref": "REF026",
     "Prix": "799.00",
-    "Nombre article restant": "26",
+    "Description": "Un katana samouraï, symbole de l'honneur et de la tradition japonaise.",
+    "Nbr": "26",
     "Note": null
   },
   {
@@ -266,7 +292,8 @@
     "Image": "image_hache5.png",
     "Ref": "REF027",
     "Prix": "399.50",
-    "Nombre article restant": "27",
+    "Description": "Une hache de combat médiévale, rappelant les champs de bataille anciens.",
+    "Nbr": "27",
     "Note": null
   },
   {
@@ -276,7 +303,8 @@
     "Image": "image_dague5.png",
     "Ref": "REF028",
     "Prix": "49.99",
-    "Nombre article restant": "28",
+    "Description": "Une dague fantaisie, parfaite pour les collectionneurs exigeants.",
+    "Nbr": "28",
     "Note": null
   },
   {
@@ -286,7 +314,8 @@
     "Image": "image_taser5.png",
     "Ref": "REF029",
     "Prix": "159.99",
-    "Nombre article restant": "29",
+    "Description": "Un taser rechargeable, offrant une protection durable.",
+    "Nbr": "29",
     "Note": null
   },
   {
@@ -296,7 +325,8 @@
     "Image": "image_armefeu5.png",
     "Ref": "REF030",
     "Prix": "1199.99",
-    "Nombre article restant": "30",
+    "Description": "Un pistolet à nanotechnologie, combinant puissance et innovation.",
+    "Nbr": "30",
     "Note": null
   }
 ]
