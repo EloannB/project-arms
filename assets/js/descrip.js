@@ -29,6 +29,7 @@ fetch('assets/data/article.json')
                   <p class="card-text">${article.Prix}€</p>
                   <p class="card-text">${article.Description}</p>
                   <p class="card-text">${article.Ref}</p>
+                  <button type="button" class="btn btn-outline-danger">Ajouter au panier</button>
                 </div>
               </div>
             </div>
