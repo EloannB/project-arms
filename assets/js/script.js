@@ -1,7 +1,10 @@
+function secondPage(ref) {
+    window.location.href = "descrip.html?ref=" + ref;
+}
+
 fetch('assets/data/article.json')
     .then(response => response.json())
     .then(data => {
-        let index = 0;
         data.forEach(function (article) {
 
             const card = document.createElement('div')
@@ -11,8 +14,8 @@ fetch('assets/data/article.json')
                 <img src="assets/img/${article.Image}" class="card-img-top" alt="Image arme">
                 <div class="card-body">
                     <h5 class="card-title">${article.Nom}</h5>
-                    <p class="card-text">${article.Prix}</p>
-                    <a href="${article.Ref}" class="btn btn-secondary view-more">Voir Plus</a>
+                    <p class="card-text">${article.Prix}€</p>
+                    <button onclick="secondPage('${article.Ref}')" class="btn btn-secondary view-more">Voir Plus</button>
                 </div>
             `
 
