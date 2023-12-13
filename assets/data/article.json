@@ -1,302 +1,302 @@
 [
-    {
-        "Article": "1",
-        "Categorie": "Arme blanche",
-        "Nom": "Couteau de poche",
-        "Image": "image_couteau1.png",
-        "Ref": "REF001",
-        "Prix": "49.99",
-        "Nombre article restant": "1",
-        "Note": "5"
-    },
-    {
-        "Article": "2",
-        "Categorie": "Arme blanche",
-        "Nom": "Katana traditionnel",
-        "Image": "image_katana1.png",
-        "Ref": "REF002",
-        "Prix": "399.00",
-        "Nombre article restant": "2",
-        "Note": "4"
-    },
-    {
-        "Article": "3",
-        "Categorie": "Arme blanche",
-        "Nom": "Hache de guerre",
-        "Image": "image_hache1.png",
-        "Ref": "REF003",
-        "Prix": "199.50",
-        "Nombre article restant": "3",
-        "Note": "3"
-    },
-    {
-        "Article": "4",
-        "Categorie": "Arme blanche",
-        "Nom": "Dague antique",
-        "Image": "image_dague1.png",
-        "Ref": "REF004",
-        "Prix": "99.99",
-        "Nombre article restant": "4",
-        "Note": "5"
-    },
-    {
-        "Article": "5",
-        "Categorie": "Équipement de défense",
-        "Nom": "Taser de sécurité",
-        "Image": "image_taser1.png",
-        "Ref": "REF005",
-        "Prix": "299.99",
-        "Nombre article restant": "5",
-        "Note": "2"
-    },
-    {
-        "Article": "6",
-        "Categorie": "Arme à feu",
-        "Nom": "Pistolet de poche",
-        "Image": "image_armefeu1.png",
-        "Ref": "REF006",
-        "Prix": "599.99",
-        "Nombre article restant": "6",
-        "Note": "4"
-    },
-    {
-        "Article": "7",
-        "Categorie": "Arme blanche",
-        "Nom": "Couteau de survie",
-        "Image": "image_couteau2.png",
-        "Ref": "REF007",
-        "Prix": "79.99",
-        "Nombre article restant": "7",
-        "Note": "5"
-    },
-    {
-        "Article": "8",
-        "Categorie": "Arme blanche",
-        "Nom": "Katana forgé à la main",
-        "Image": "image_katana2.png",
-        "Ref": "REF008",
-        "Prix": "699.00",
-        "Nombre article restant": "8",
-        "Note": "3"
-    },
-    {
-        "Article": "9",
-        "Categorie": "Arme blanche",
-        "Nom": "Hache viking",
-        "Image": "image_hache2.png",
-        "Ref": "REF009",
-        "Prix": "299.50",
-        "Nombre article restant": "9",
-        "Note": "4"
-    },
-    {
-        "Article": "10",
-        "Categorie": "Arme blanche",
-        "Nom": "Dague cérémoniale",
-        "Image": "image_dague2.png",
-        "Ref": "REF010",
-        "Prix": "129.99",
-        "Nombre article restant": "10",
-        "Note": "5"
-    },
-    {
-        "Article": "11",
-        "Categorie": "Équipement de défense",
-        "Nom": "Taser de défense personnelle",
-        "Image": "image_taser2.png",
-        "Ref": "REF011",
-        "Prix": "399.99",
-        "Nombre article restant": "11",
-        "Note": "4"
-    },
-    {
-        "Article": "12",
-        "Categorie": "Arme à feu",
-        "Nom": "Fusil de chasse traditionnel",
-        "Image": "image_armefeu2.png",
-        "Ref": "REF012",
-        "Prix": "799.99",
-        "Nombre article restant": "12",
-        "Note": "2"
-    },
-    {
-        "Article": "13",
-        "Categorie": "Arme blanche",
-        "Nom": "Couteau suisse",
-        "Image": "image_couteau3.png",
-        "Ref": "REF013",
-        "Prix": "59.99",
-        "Nombre article restant": "13",
-        "Note": "5"
-    },
-    {
-        "Article": "14",
-        "Categorie": "Arme blanche",
-        "Nom": "Katana de décoration",
-        "Image": "image_katana3.png",
-        "Ref": "REF014",
-        "Prix": "299.00",
-        "Nombre article restant": "14",
-        "Note": "3"
-    },
-    {
-        "Article": "15",
-        "Categorie": "Arme blanche",
-        "Nom": "Hache cérémonielle",
-        "Image": "image_hache3.png",
-        "Ref": "REF015",
-        "Prix": "249.50",
-        "Nombre article restant": "15",
-        "Note": "4"
-    },
-    {
-        "Article": "16",
-        "Categorie": "Arme blanche",
-        "Nom": "Dague de collection",
-        "Image": "image_dague3.png",
-        "Ref": "REF016",
-        "Prix": "149.99",
-        "Nombre article restant": "16",
-        "Note": "5"
-    },
-    {
-        "Article": "17",
-        "Categorie": "Équipement de défense",
-        "Nom": "Taser à impulsions électriques",
-        "Image": "image_taser3.png",
-        "Ref": "REF017",
-        "Prix": "249.99",
-        "Nombre article restant": "17",
-        "Note": "2"
-    },
-    {
-        "Article": "18",
-        "Categorie": "Arme à feu",
-        "Nom": "Pistolet automatique",
-        "Image": "image_armefeu3.png",
-        "Ref": "REF018",
-        "Prix": "899.99",
-        "Nombre article restant": "18",
-        "Note": "4"
-    },
-    {
-        "Article": "19",
-        "Categorie": "Arme blanche",
-        "Nom": "Couteau de cuisine professionnel",
-        "Image": "image_couteau4.png",
-        "Ref": "REF019",
-        "Prix": "69.99",
-        "Nombre article restant": "19",
-        "Note": "3"
-    },
-    {
-        "Article": "20",
-        "Categorie": "Arme blanche",
-        "Nom": "Katana ninja",
-        "Image": "image_katana4.png",
-        "Ref": "REF020",
-        "Prix": "599.00",
-        "Nombre article restant": "20",
-        "Note": "5"
-    },
-    {
-        "Article": "21",
-        "Categorie": "Arme blanche",
-        "Nom": "Hache de bûcheron",
-        "Image": "image_hache4.png",
-        "Ref": "REF021",
-        "Prix": "199.50",
-        "Nombre article restant": "21",
-        "Note": null
-    },
-    {
-        "Article": "22",
-        "Categorie": "Arme blanche",
-        "Nom": "Dague de chasse",
-        "Image": "image_dague4.png",
-        "Ref": "REF022",
-        "Prix": "89.99",
-        "Nombre article restant": "22",
-        "Note": null
-    },
-    {
-        "Article": "23",
-        "Categorie": "Équipement de défense",
-        "Nom": "Taser compact",
-        "Image": "image_taser4.png",
-        "Ref": "REF023",
-        "Prix": "179.99",
-        "Nombre article restant": "23",
-        "Note": null
-    },
-    {
-        "Article": "24",
-        "Categorie": "Arme à feu",
-        "Nom": "Fusil sniper",
-        "Image": "image_armefeu4.png",
-        "Ref": "REF024",
-        "Prix": "1499.99",
-        "Nombre article restant": "24",
-        "Note": null
-    },
-    {
-        "Article": "25",
-        "Categorie": "Arme blanche",
-        "Nom": "Couteau de plongée",
-        "Image": "image_couteau5.png",
-        "Ref": "REF025",
-        "Prix": "129.99",
-        "Nombre article restant": "25",
-        "Note": null
-    },
-    {
-        "Article": "26",
-        "Categorie": "Arme blanche",
-        "Nom": "Katana samouraï",
-        "Image": "image_katana5.png",
-        "Ref": "REF026",
-        "Prix": "799.00",
-        "Nombre article restant": "26",
-        "Note": null
-    },
-    {
-        "Article": "27",
-        "Categorie": "Arme blanche",
-        "Nom": "Hache de combat médiévale",
-        "Image": "image_hache5.png",
-        "Ref": "REF027",
-        "Prix": "399.50",
-        "Nombre article restant": "27",
-        "Note": null
-    },
-    {
-        "Article": "28",
-        "Categorie": "Arme blanche",
-        "Nom": "Dague fantaisie",
-        "Image": "image_dague5.png",
-        "Ref": "REF028",
-        "Prix": "49.99",
-        "Nombre article restant": "28",
-        "Note": null
-    },
-    {
-        "Article": "29",
-        "Categorie": "Équipement de défense",
-        "Nom": "Taser rechargeable",
-        "Image": "image_taser5.png",
-        "Ref": "REF029",
-        "Prix": "159.99",
-        "Nombre article restant": "29",
-        "Note": null
-    },
-    {
-        "Article": "30",
-        "Categorie": "Arme à feu",
-        "Nom": "Pistolet à nanotechnologie",
-        "Image": "image_armefeu5.png",
-        "Ref": "REF030",
-        "Prix": "1199.99",
-        "Nombre article restant": "30",
-        "Note": null
-    }
+  {
+    "Article": "1",
+    "Categorie": "Arme blanche",
+    "Nom": "Couteau de poche",
+    "Image": "image_couteau1.png",
+    "Ref": "REF001",
+    "Prix": "49.99",
+    "nbr": "1",
+    "Note": "5"
+  },
+  {
+    "Article": "2",
+    "Categorie": "Arme blanche",
+    "Nom": "Katana traditionnel",
+    "Image": "image_katana1.png",
+    "Ref": "REF002",
+    "Prix": "399.00",
+    "Nombre article restant": "2",
+    "Note": "4"
+  },
+  {
+    "Article": "3",
+    "Categorie": "Arme blanche",
+    "Nom": "Hache de guerre",
+    "Image": "image_hache1.png",
+    "Ref": "REF003",
+    "Prix": "199.50",
+    "Nombre article restant": "3",
+    "Note": "3"
+  },
+  {
+    "Article": "4",
+    "Categorie": "Arme blanche",
+    "Nom": "Dague antique",
+    "Image": "image_dague1.png",
+    "Ref": "REF004",
+    "Prix": "99.99",
+    "Nombre article restant": "4",
+    "Note": "5"
+  },
+  {
+    "Article": "5",
+    "Categorie": "Équipement de défense",
+    "Nom": "Taser de sécurité",
+    "Image": "image_taser1.png",
+    "Ref": "REF005",
+    "Prix": "299.99",
+    "Nombre article restant": "5",
+    "Note": "2"
+  },
+  {
+    "Article": "6",
+    "Categorie": "Arme à feu",
+    "Nom": "Pistolet de poche",
+    "Image": "image_armefeu1.png",
+    "Ref": "REF006",
+    "Prix": "599.99",
+    "Nombre article restant": "6",
+    "Note": "4"
+  },
+  {
+    "Article": "7",
+    "Categorie": "Arme blanche",
+    "Nom": "Couteau de survie",
+    "Image": "image_couteau2.png",
+    "Ref": "REF007",
+    "Prix": "79.99",
+    "Nombre article restant": "7",
+    "Note": "5"
+  },
+  {
+    "Article": "8",
+    "Categorie": "Arme blanche",
+    "Nom": "Katana forgé à la main",
+    "Image": "image_katana2.png",
+    "Ref": "REF008",
+    "Prix": "699.00",
+    "Nombre article restant": "8",
+    "Note": "3"
+  },
+  {
+    "Article": "9",
+    "Categorie": "Arme blanche",
+    "Nom": "Hache viking",
+    "Image": "image_hache2.png",
+    "Ref": "REF009",
+    "Prix": "299.50",
+    "Nombre article restant": "9",
+    "Note": "4"
+  },
+  {
+    "Article": "10",
+    "Categorie": "Arme blanche",
+    "Nom": "Dague cérémoniale",
+    "Image": "image_dague2.png",
+    "Ref": "REF010",
+    "Prix": "129.99",
+    "Nombre article restant": "10",
+    "Note": "5"
+  },
+  {
+    "Article": "11",
+    "Categorie": "Équipement de défense",
+    "Nom": "Taser de défense personnelle",
+    "Image": "image_taser2.png",
+    "Ref": "REF011",
+    "Prix": "399.99",
+    "Nombre article restant": "11",
+    "Note": "4"
+  },
+  {
+    "Article": "12",
+    "Categorie": "Arme à feu",
+    "Nom": "Fusil de chasse traditionnel",
+    "Image": "image_armefeu2.png",
+    "Ref": "REF012",
+    "Prix": "799.99",
+    "Nombre article restant": "12",
+    "Note": "2"
+  },
+  {
+    "Article": "13",
+    "Categorie": "Arme blanche",
+    "Nom": "Couteau suisse",
+    "Image": "image_couteau3.png",
+    "Ref": "REF013",
+    "Prix": "59.99",
+    "Nombre article restant": "13",
+    "Note": "5"
+  },
+  {
+    "Article": "14",
+    "Categorie": "Arme blanche",
+    "Nom": "Katana de décoration",
+    "Image": "image_katana3.png",
+    "Ref": "REF014",
+    "Prix": "299.00",
+    "Nombre article restant": "14",
+    "Note": "3"
+  },
+  {
+    "Article": "15",
+    "Categorie": "Arme blanche",
+    "Nom": "Hache cérémonielle",
+    "Image": "image_hache3.png",
+    "Ref": "REF015",
+    "Prix": "249.50",
+    "Nombre article restant": "15",
+    "Note": "4"
+  },
+  {
+    "Article": "16",
+    "Categorie": "Arme blanche",
+    "Nom": "Dague de collection",
+    "Image": "image_dague3.png",
+    "Ref": "REF016",
+    "Prix": "149.99",
+    "Nombre article restant": "16",
+    "Note": "5"
+  },
+  {
+    "Article": "17",
+    "Categorie": "Équipement de défense",
+    "Nom": "Taser à impulsions électriques",
+    "Image": "image_taser3.png",
+    "Ref": "REF017",
+    "Prix": "249.99",
+    "Nombre article restant": "17",
+    "Note": "2"
+  },
+  {
+    "Article": "18",
+    "Categorie": "Arme à feu",
+    "Nom": "Pistolet automatique",
+    "Image": "image_armefeu3.png",
+    "Ref": "REF018",
+    "Prix": "899.99",
+    "Nombre article restant": "18",
+    "Note": "4"
+  },
+  {
+    "Article": "19",
+    "Categorie": "Arme blanche",
+    "Nom": "Couteau de cuisine professionnel",
+    "Image": "image_couteau4.png",
+    "Ref": "REF019",
+    "Prix": "69.99",
+    "Nombre article restant": "19",
+    "Note": "3"
+  },
+  {
+    "Article": "20",
+    "Categorie": "Arme blanche",
+    "Nom": "Katana ninja",
+    "Image": "image_katana4.png",
+    "Ref": "REF020",
+    "Prix": "599.00",
+    "Nombre article restant": "20",
+    "Note": "5"
+  },
+  {
+    "Article": "21",
+    "Categorie": "Arme blanche",
+    "Nom": "Hache de bûcheron",
+    "Image": "image_hache4.png",
+    "Ref": "REF021",
+    "Prix": "199.50",
+    "Nombre article restant": "21",
+    "Note": null
+  },
+  {
+    "Article": "22",
+    "Categorie": "Arme blanche",
+    "Nom": "Dague de chasse",
+    "Image": "image_dague4.png",
+    "Ref": "REF022",
+    "Prix": "89.99",
+    "Nombre article restant": "22",
+    "Note": null
+  },
+  {
+    "Article": "23",
+    "Categorie": "Équipement de défense",
+    "Nom": "Taser compact",
+    "Image": "image_taser4.png",
+    "Ref": "REF023",
+    "Prix": "179.99",
+    "Nombre article restant": "23",
+    "Note": null
+  },
+  {
+    "Article": "24",
+    "Categorie": "Arme à feu",
+    "Nom": "Fusil sniper",
+    "Image": "image_armefeu4.png",
+    "Ref": "REF024",
+    "Prix": "1499.99",
+    "Nombre article restant": "24",
+    "Note": null
+  },
+  {
+    "Article": "25",
+    "Categorie": "Arme blanche",
+    "Nom": "Couteau de plongée",
+    "Image": "image_couteau5.png",
+    "Ref": "REF025",
+    "Prix": "129.99",
+    "Nombre article restant": "25",
+    "Note": null
+  },
+  {
+    "Article": "26",
+    "Categorie": "Arme blanche",
+    "Nom": "Katana samouraï",
+    "Image": "image_katana5.png",
+    "Ref": "REF026",
+    "Prix": "799.00",
+    "Nombre article restant": "26",
+    "Note": null
+  },
+  {
+    "Article": "27",
+    "Categorie": "Arme blanche",
+    "Nom": "Hache de combat médiévale",
+    "Image": "image_hache5.png",
+    "Ref": "REF027",
+    "Prix": "399.50",
+    "Nombre article restant": "27",
+    "Note": null
+  },
+  {
+    "Article": "28",
+    "Categorie": "Arme blanche",
+    "Nom": "Dague fantaisie",
+    "Image": "image_dague5.png",
+    "Ref": "REF028",
+    "Prix": "49.99",
+    "Nombre article restant": "28",
+    "Note": null
+  },
+  {
+    "Article": "29",
+    "Categorie": "Équipement de défense",
+    "Nom": "Taser rechargeable",
+    "Image": "image_taser5.png",
+    "Ref": "REF029",
+    "Prix": "159.99",
+    "Nombre article restant": "29",
+    "Note": null
+  },
+  {
+    "Article": "30",
+    "Categorie": "Arme à feu",
+    "Nom": "Pistolet à nanotechnologie",
+    "Image": "image_armefeu5.png",
+    "Ref": "REF030",
+    "Prix": "1199.99",
+    "Nombre article restant": "30",
+    "Note": null
+  }
 ]
