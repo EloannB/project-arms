@@ -15,7 +15,7 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
     </td>
     <td style="font-weight: bold" class="total">$${parseFloat(itemPrice).toFixed(2)}</td>
     <td>
-            <button styme="display:block" class="button">Clear Item</button>
+            <button style="display:block" class="button">Clear Item</button>
         </td>
 `;
 
