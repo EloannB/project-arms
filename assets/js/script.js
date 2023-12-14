@@ -19,14 +19,6 @@ fetch('assets/data/article.json')
       const card = document.createElement('div')
       card.classList.add('card', 'col-lg-2', 'col-10', 'm-3')
 
-      const cartButton = document.createElement('button');
-      cartButton.classList.add('btn', 'btn-dark', 'btn-cart', 'btn-round', 'float-right')
-      cartButton.innerHTML = '<i class="bi bi-cart-plus"></i>'
-      cartButton.onclick = function () {
-
-        console.log('Article ajouté au panier:', article.Nom)
-      };
-
       card.innerHTML = `
         <img src="assets/img/${article.Image}" class="card-img-top" alt="Image arme">
         <div class="card-body">
@@ -34,7 +26,7 @@ fetch('assets/data/article.json')
             <p class="card-text">${article.Prix}€</p>
             <button onclick="secondPage('${article.Ref}')" class="view-more">Voir Plus</button>
         </div>
-        ${cartButton.outerHTML}
+        <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round float-right" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
       `
 
 
@@ -83,6 +75,7 @@ selectElement.addEventListener("change", function () {
                         <p class="card-text">${article.Prix}€</p>
                         <button onclick="secondPage('${article.Ref}')" class="view-more">Voir Plus</button>
                     </div>
+                    <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round float-right" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
                 `
 
 
@@ -115,6 +108,7 @@ selectElement.addEventListener("change", function () {
                         <p class="card-text">${article.Prix}€</p>
                         <button onclick="secondPage('${article.Ref}')" class="view-more">Voir Plus</button>
                     </div>
+                    <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round float-right" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
                 `
 
 
@@ -147,6 +141,7 @@ selectElement.addEventListener("change", function () {
                             <p class="card-text">${article.Prix}€</p>
                             <button onclick="secondPage('${article.Ref}')" class="view-more">Voir Plus</button>
                         </div>
+                        <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round float-right" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
                     `
 
 
