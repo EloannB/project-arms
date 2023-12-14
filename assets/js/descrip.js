@@ -11,8 +11,8 @@ fetch('assets/data/article.json')
   .then(response => response.json())
   .then(data => {
     for (const article of data) {
-      console.log(article)
-      if (article.Ref === refValue) { 
+      // console.log(article)
+      if (article.Ref === refValue) {
         const card = document.createElement('div')
         card.classList.add('card', 'col-lg-2', 'col-10', 'm-3')
 
@@ -26,10 +26,11 @@ fetch('assets/data/article.json')
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">${article.Nom}</h5>
-                  <p class="card-text">${article.Prix}€</p>
+                  <p class="card-text">${(article.Prix)}€</p>
                   <p class="card-text">${article.Description}</p>
-                  <p class="card-text">${article.Ref}</p>
-                  <button type="button" class="btn btn-outline-danger">Ajouter au panier</button>
+                  <p class="card-text">Réference: ${article.Ref}</p>
+                  <p class="card-text">stock: ${article.Nbr}</p>
+                  <button type="button" class="btn btn-outline-danger"  onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')">Ajouter au panier</button>
                 </div>
               </div>
             </div>
@@ -38,7 +39,8 @@ fetch('assets/data/article.json')
 
 
         document.getElementById('cardDescript').appendChild(card)
-      
-    }}
+
+      }
+    }
   }
   )

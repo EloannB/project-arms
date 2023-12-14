@@ -16,7 +16,7 @@
     "Nom": "Katana traditionnel",
     "Image": "image_katana1.png",
     "Ref": "REF002",
-    "Prix": "399.00",
+    "Prix": "399",
     "Description": "Un katana traditionnel, symbole d'art martial et de finesse japonaise.",
     "Nbr": "2",
     "Note": "4"
@@ -82,7 +82,7 @@
     "Nom": "Katana forgé à la main",
     "Image": "image_katana2.png",
     "Ref": "REF008",
-    "Prix": "699.00",
+    "Prix": "699",
     "Description": "Un katana forgé à la main, démontrant un artisanat exceptionnel.",
     "Nbr": "8",
     "Note": "3"
@@ -148,7 +148,7 @@
     "Nom": "Katana de décoration",
     "Image": "image_katana3.png",
     "Ref": "REF014",
-    "Prix": "299.00",
+    "Prix": "299",
     "Description": "Un katana de décoration, parfait pour l'affichage artistique.",
     "Nbr": "14",
     "Note": "3"
@@ -214,7 +214,7 @@
     "Nom": "Katana ninja",
     "Image": "image_katana4.png",
     "Ref": "REF020",
-    "Prix": "599.00",
+    "Prix": "599",
     "Description": "Un katana ninja, arme emblématique des guerriers de l'ombre.",
     "Nbr": "20",
     "Note": "5"
@@ -280,7 +280,7 @@
     "Nom": "Katana samouraï",
     "Image": "image_katana5.png",
     "Ref": "REF026",
-    "Prix": "799.00",
+    "Prix": "799",
     "Description": "Un katana samouraï, symbole de l'honneur et de la tradition japonaise.",
     "Nbr": "26",
     "Note": null

@@ -25,7 +25,8 @@ fetch('assets/data/article.json')
                     <h5 class="card-title">${article.Nom}</h5>
                     <p class="card-text">${article.Prix}€</p>
                     <button onclick="secondPage('${article.Ref}')" class="btn btn-secondary view-more">Voir Plus</button>
-                </div>
+                    <button type="button" class="btn btn-outline-danger"  onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')">Ajouter au panier</button>
+                    </div>
             `
 
 

@@ -38,10 +38,21 @@
     </nav>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Votre Panier</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body p-0">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Produit </th>
+                        <th scope="col">Référence </th>
+                        <th scope="col">Quantité</th>
+                        <th scope="col">Prix</th>
+                    </tr>
+                </thead>
+                <tbody id="canvasBody"></tbody>
+            </table>
 
         </div>
 
@@ -62,6 +73,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="./assets/js/descrip.js"></script>
+    <script src="./assets/js/cart.js"></script>
 </body>
 
 </html>

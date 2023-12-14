@@ -1,66 +1,115 @@
-let button = document.getElementById('button');
-let cart = document.getElementById('cart');
+function addToCart(itemImage, itemPrice, itemRef, itemStock) {
+    const cartItemsContainer = document.getElementById("canvasBody");
+    const quantity = 1;
 
 
-// let cartItems = []; // Initialize an empty array to store cart items
 
 
-const cartItem = document.createElement('div');
-cartItem.classList.add('cart-item');
 
-
-fetch('assets/data/article.json')
-    .then(response => response.json())
-    .then(data => {
-        for (article of data) {
-
-            const subtotal = article.Prix * article.Nbr;
-
-            cartItem.innerHTML = `
-    <div class="row align-items-center">
-        <div class="col-2">
-            <img src="assets/img/${article.Image}" alt="Product Image" class="img-fluid">
-        </div>
-        <div class="col-2">
-            <p>${article.Ref}</p> <!-- Product Reference -->
-        </div>
-        <div class="col-2">
-            <p>${article.Nbr}</p> <!-- Quantity -->
-        </div>
-        <div class="col-2">
-            <p>$${article.Prix}</p> <!-- Price -->
-        </div>
-        <div class="col-2">
-            <p>$${subtotal}</p> <!-- Subtotal -->
-        </div>
-        <div class="col-2">
-            <!-- You can include logic to calculate the total -->
-            <!-- For example, accumulate subtotal of all items to get total -->
-        </div>
-    </div>
-    <hr>
+    const newItemRow = document.createElement("tr");
+    newItemRow.innerHTML = `
+    <td><img src="assets/img/${itemImage}" alt="Product Image" class="img-fluid"></td>
+    <td>${itemRef}</td>
+    <td>
+        <input type="number" class="form-control quantityInput" value="1" min="1" max="${itemStock}">
+    </td>
+    <td style="font-weight: bold" class="total">$${parseFloat(itemPrice).toFixed(2)}</td>
+    <td>
+            <button styme="display:block" class="button">Clear Item</button>
+        </td>
 `;
 
 
-            cart.appendChild(cartItem);
+    cartItemsContainer.appendChild(newItemRow);
 
-            // Functionality for plus and minus buttons to adjust quantity within stock limit
-            const quantityButtons = cartItem.querySelectorAll('.quantity-btn');
-            const stockQuantity = cartItem.querySelector('.stock-quantity');
+    const button = newItemRow.querySelector('.button')
+    const quantityInput = newItemRow.querySelector(".quantityInput");
+    const total = newItemRow.querySelector(".total");
 
-            quantityButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    if (button.classList.contains('plus') && article.Nbr < article.StockLimit) {
-                        article.Nbr++; // Increment the quantity within stock limit
-                    } else if (button.classList.contains('minus') && article.Nbr > 0) {
-                        article.Nbr--; // Decrement the quantity if greater than 0
-                    }
-                    stockQuantity.textContent = article.Nbr; // Update displayed quantity
 
-                    // You can add logic here to update the stock quantity in your data structure or perform other actions
-                });
-            });
-            button.addEventListener('click', function () {
-            })
-        }
+    // ----------compteur sous-totale------------
+    quantityInput.addEventListener("input", () => {
+        const quantity = parseInt(quantityInput.value);
+        const subtotal = itemPrice * quantity;
+        total.textContent = "$" + subtotal;
+        calculateTotalCartPrice();
+
     });
+    // -------clear item---------------
+    button.addEventListener('click', function () {
+        newItemRow.innerHTML = ""
+        calculateTotalCartPrice();
+
+    });
+
+
+
+
+
+
+
+    function calculateTotalCartPrice() {
+        const totalElements = document.querySelectorAll(".total");
+        let totalPrice = 0;
+
+        totalElements.forEach(element => {
+            const price = parseFloat(element.textContent.replace('$', ''));
+            totalPrice += price;
+
+        });
+        console.log(totalPrice);
+        repositionClearButton()
+
+    }
+
+
+
+
+    function addClearAllButton() {
+        const clearAllButton = document.createElement("button");
+        clearAllButton.textContent = "Clear All";
+        clearAllButton.classList.add("button", "clearAll", "btn", "btn-danger");
+        clearAllButton.style.display = "inline-block";
+        const validateButton = document.createElement("button");
+        validateButton.textContent = "Validate";
+        validateButton.classList.add("button", "validate", "btn", "btn-valid");
+        validateButton.style.display = "inline";
+        const buttonsContainer = document.createElement("div");
+        buttonsContainer.classList.add("buttonsContainer")
+        buttonsContainer.style.display = "flex"; // Use flexbox
+        buttonsContainer.style.justifyContent = "space-between"; // Push buttons to each end of the container
+        buttonsContainer.appendChild(clearAllButton);
+        buttonsContainer.appendChild(validateButton);
+
+        clearAllButton.addEventListener("click", () => {
+            cartItemsContainer.innerHTML = "";
+            calculateTotalCartPrice()
+            if (cartItemsContainer.innerHTML = "") {
+                cartItemsContainer.removeChild(buttonsContainer);
+            }
+        })
+        // Append the clearAllButton at the end of cartItemsContainer
+        cartItemsContainer.appendChild(buttonsContainer);
+    }
+
+
+
+
+
+
+    function repositionClearButton() {
+        const buttonsContainer = document.querySelector('.buttonsContainer');
+
+        // Check if Clear All button exists
+        if (buttonsContainer) {
+            cartItemsContainer.removeChild(buttonsContainer); // Remove the existing button
+        }
+
+        // Add the Clear All button at the end
+        addClearAllButton();
+    }
+
+    calculateTotalCartPrice();
+
+}
+
