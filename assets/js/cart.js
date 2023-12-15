@@ -1,6 +1,5 @@
 function addToCart(itemImage, itemPrice, itemRef, itemStock) {
     const cartItemsContainer = document.getElementById("canvasBody");
-    const quantity = 1;
 
 
 
@@ -15,7 +14,7 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
     </td>
     <td style="font-weight: bold" class="total">${parseFloat(itemPrice).toFixed(2)}€</td>
     <td>
-            <button style="display:block" class="button">Supprimer</button>
+            <button style="display:block" class="button">Supp</button>
         </td>
 `;
 
@@ -31,7 +30,7 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
     quantityInput.addEventListener("input", () => {
         const quantity = parseInt(quantityInput.value);
         const subtotal = itemPrice * quantity;
-        total.textContent = "€" + subtotal;
+        total.textContent = "$" + subtotal.toFixed(2);
         calculateTotalCartPrice();
 
     });
@@ -45,9 +44,6 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
 
 
 
-
-
-
     function calculateTotalCartPrice() {
         const totalElements = document.querySelectorAll(".total");
         let totalPrice = 0;
@@ -57,7 +53,15 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
             totalPrice += price;
 
         });
-        console.log(totalPrice);
+        console.log(totalPrice.toFixed(2));
+
+        const buttonsContainer = document.querySelector('.buttonsContainer');
+        const formInput = document.createElement('input');
+        if (buttonsContainer) {
+            buttonsContainer.appendChild(formInput);
+            formInput.classList.add('totalInput');
+            formInput.value = totalPrice.toFixed(2);
+        }
         repositionClearButton()
 
     }
@@ -66,30 +70,33 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
 
 
     function addClearAllButton() {
-        const clearAllButton = document.createElement("button");
-        clearAllButton.textContent = "Tout Supprimer";
-        clearAllButton.classList.add("button", "clearAll", "btn", "btn-danger");
-        clearAllButton.style.display = "inline-block";
-        const validateButton = document.createElement("button");
-        validateButton.textContent = "Valider";
-        validateButton.classList.add("button", "validate", "btn", "btn-valid");
-        validateButton.style.display = "inline";
-        const buttonsContainer = document.createElement("div");
-        buttonsContainer.classList.add("buttonsContainer")
-        buttonsContainer.style.display = "flex"; // Use flexbox
-        buttonsContainer.style.justifyContent = "space-between"; // Push buttons to each end of the container
-        buttonsContainer.appendChild(clearAllButton);
-        buttonsContainer.appendChild(validateButton);
 
+        const clearfooter = document.getElementById("tableFooter");
+
+        const buttonsContainer = document.createElement("div");
+        const totalInput = document.querySelector(".totalInput");
+        buttonsContainer.innerHTML = `
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Div des boutons -->
+                                <button class="btn btn-danger clearAll">Effacer tout</button>
+                                <input type="text" class="form-control text-center formInput" value=${totalInput} readonly>
+                                <button class="btn btn-success">Valider</button>
+                            </div>
+        `;
+        buttonsContainer.classList.add("buttonsContainer")
+
+        const clearAllButton = buttonsContainer.querySelector(".clearAll");
         clearAllButton.addEventListener("click", () => {
             cartItemsContainer.innerHTML = "";
-            calculateTotalCartPrice()
             if (cartItemsContainer.innerHTML = "") {
                 cartItemsContainer.removeChild(buttonsContainer);
             }
+            calculateTotalCartPrice()
+
+
         })
-        // Append the clearAllButton at the end of cartItemsContainer
-        cartItemsContainer.appendChild(buttonsContainer);
+        // Append the clearAllButton at the end of clearfooter
+        clearfooter.appendChild(buttonsContainer);
     }
 
 
@@ -99,10 +106,10 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
 
     function repositionClearButton() {
         const buttonsContainer = document.querySelector('.buttonsContainer');
-
+        const clearfooter = document.getElementById('tableFooter');
         // Check if Clear All button exists
         if (buttonsContainer) {
-            cartItemsContainer.removeChild(buttonsContainer); // Remove the existing button
+            clearfooter.removeChild(buttonsContainer); // Remove the existing button
         }
 
         // Add the Clear All button at the end
