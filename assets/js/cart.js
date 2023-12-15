@@ -13,9 +13,9 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
     <td>
         <input type="number" class="form-control quantityInput" value="1" min="1" max="${itemStock}">
     </td>
-    <td style="font-weight: bold" class="total">$${parseFloat(itemPrice).toFixed(2)}</td>
+    <td style="font-weight: bold" class="total">${parseFloat(itemPrice).toFixed(2)}€</td>
     <td>
-            <button style="display:block" class="button">Clear Item</button>
+            <button style="display:block" class="button">Supprimer</button>
         </td>
 `;
 
@@ -31,7 +31,7 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
     quantityInput.addEventListener("input", () => {
         const quantity = parseInt(quantityInput.value);
         const subtotal = itemPrice * quantity;
-        total.textContent = "$" + subtotal;
+        total.textContent = "€" + subtotal;
         calculateTotalCartPrice();
 
     });
@@ -53,7 +53,7 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
         let totalPrice = 0;
 
         totalElements.forEach(element => {
-            const price = parseFloat(element.textContent.replace('$', ''));
+            const price = parseFloat(element.textContent.replace('€', ''));
             totalPrice += price;
 
         });
@@ -67,11 +67,11 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
 
     function addClearAllButton() {
         const clearAllButton = document.createElement("button");
-        clearAllButton.textContent = "Clear All";
+        clearAllButton.textContent = "Tout Supprimer";
         clearAllButton.classList.add("button", "clearAll", "btn", "btn-danger");
         clearAllButton.style.display = "inline-block";
         const validateButton = document.createElement("button");
-        validateButton.textContent = "Validate";
+        validateButton.textContent = "Valider";
         validateButton.classList.add("button", "validate", "btn", "btn-valid");
         validateButton.style.display = "inline";
         const buttonsContainer = document.createElement("div");

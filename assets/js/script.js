@@ -26,7 +26,7 @@ fetch('assets/data/article.json')
             <p class="card-text">${article.Prix}€</p>
             <button onclick="secondPage('${article.Ref}')" class="view-more">Voir Plus</button>
         </div>
-        <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round float-right" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
+        <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round mb-3" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
       `
 
 
