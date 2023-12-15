@@ -12,9 +12,9 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
     <td>
         <input type="number" class="form-control quantityInput" value="1" min="1" max="${itemStock}">
     </td>
-    <td style="font-weight: bold" class="total">$${parseFloat(itemPrice).toFixed(2)}</td>
+    <td style="font-weight: bold" class="total">${parseFloat(itemPrice).toFixed(2)}€</td>
     <td>
-            <button style="display:block" class="button">Clear Item</button>
+            <button style="display:block" class="button">Supp</button>
         </td>
 `;
 
@@ -49,7 +49,7 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
         let totalPrice = 0;
 
         totalElements.forEach(element => {
-            const price = parseFloat(element.textContent.replace('$', ''));
+            const price = parseFloat(element.textContent.replace('€', ''));
             totalPrice += price;
 
         });

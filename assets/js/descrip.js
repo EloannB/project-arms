@@ -14,14 +14,14 @@ fetch('assets/data/article.json')
       // console.log(article)
       if (article.Ref === refValue) {
         const card = document.createElement('div')
-        card.classList.add('card', 'col-lg-2', 'col-10', 'm-3')
+        card.classList.add('col-lg-2', 'col-10', 'm-3')
 
         card.innerHTML = `
           
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3" style="max-width: 540px; margin-top: 13rem">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="assets/img/${article.Image}" class="img-fluid rounded-start" alt="...">
+                <img src="assets/img/${article.Image}" class="img-fluid rounded-start" alt="Image article">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
