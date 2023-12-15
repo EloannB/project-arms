@@ -75,14 +75,19 @@ selectElement.addEventListener("change", function () {
             card.classList.add('card', 'col-lg-2', 'col-10', 'm-3')
 
             card.innerHTML = `
-                    <img src="assets/img/${article.Image}" class="card-img-top" alt="Image arme">
-                    <div class="card-body">
-                        <h5 class="card-title">${article.Nom}</h5>
-                        <p class="card-text">${article.Prix}€</p>
-                        <button onclick="secondPage('${article.Ref}')" class="view-more">Voir Plus</button>
-                    </div>
-                    <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round float-right" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
-                `
+        <img src="assets/img/${article.Image}" class="card-img-top" alt="Image arme">
+        <div class="card-body">
+            <h5 class="card-title">${article.Nom}</h5>
+            <p class="card-text">${article.Prix}€</p>
+            <div class="stars-container mb-3">
+              ${Array.from({ length: 5 }, (_, index) => `
+                <i class="bi bi-star-fill star ${index >= article.Note ? 'empty' : ''}"></i>
+              `).join('')}
+            </div>
+            <button onclick="secondPage('${article.Ref}')" class="view-more">Voir Plus</button>
+            <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round mb-1" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
+        </div>
+      `;
 
 
             document.getElementById('cardArme').appendChild(card)
@@ -108,14 +113,19 @@ selectElement.addEventListener("change", function () {
             card.classList.add('card', 'col-lg-2', 'col-10', 'm-3')
 
             card.innerHTML = `
-                    <img src="assets/img/${article.Image}" class="card-img-top" alt="Image arme">
-                    <div class="card-body">
-                        <h5 class="card-title">${article.Nom}</h5>
-                        <p class="card-text">${article.Prix}€</p>
-                        <button onclick="secondPage('${article.Ref}')" class="view-more">Voir Plus</button>
-                    </div>
-                    <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round float-right" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
-                `
+            <img src="assets/img/${article.Image}" class="card-img-top" alt="Image arme">
+            <div class="card-body">
+                <h5 class="card-title">${article.Nom}</h5>
+                <p class="card-text">${article.Prix}€</p>
+                <div class="stars-container mb-3">
+                  ${Array.from({ length: 5 }, (_, index) => `
+                    <i class="bi bi-star-fill star ${index >= article.Note ? 'empty' : ''}"></i>
+                  `).join('')}
+                </div>
+                <button onclick="secondPage('${article.Ref}')" class="view-more">Voir Plus</button>
+                <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round mb-1" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
+            </div>
+          `;
 
 
             document.getElementById('cardArme').appendChild(card)
@@ -141,14 +151,19 @@ selectElement.addEventListener("change", function () {
             card.classList.add('card', 'col-lg-2', 'col-10', 'm-3')
 
             card.innerHTML = `
-                        <img src="assets/img/${article.Image}" class="card-img-top" alt="Image arme">
-                        <div class="card-body">
-                            <h5 class="card-title">${article.Nom}</h5>
-                            <p class="card-text">${article.Prix}€</p>
-                            <button onclick="secondPage('${article.Ref}')" class="view-more">Voir Plus</button>
-                        </div>
-                        <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round float-right" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
-                    `
+            <img src="assets/img/${article.Image}" class="card-img-top" alt="Image arme">
+            <div class="card-body">
+                <h5 class="card-title">${article.Nom}</h5>
+                <p class="card-text">${article.Prix}€</p>
+                <div class="stars-container mb-3">
+                  ${Array.from({ length: 5 }, (_, index) => `
+                    <i class="bi bi-star-fill star ${index >= article.Note ? 'empty' : ''}"></i>
+                  `).join('')}
+                </div>
+                <button onclick="secondPage('${article.Ref}')" class="view-more">Voir Plus</button>
+                <i class="bi bi-cart-plus btn btn-dark btn-cart btn-round mb-1" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}','${article.Nbr}')"></i>
+            </div>
+          `;
 
 
             document.getElementById('cardArme').appendChild(card)
