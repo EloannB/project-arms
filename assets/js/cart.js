@@ -89,7 +89,7 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
                             <div class="d-flex justify-content-between align-items-center">
                                 <!-- Div des boutons -->
                                 <button class="btn btn-danger clearAll">Effacer tout</button>
-                                <input type="text" class="form-control text-center formInput" value=${totalPrice.toFixed(2)} readonly>
+                                <input type="text" class="form-control text-center formInput" value=${totalPrice.toFixed(2)}€ readonly>
                                 <button class="btn btn-success">Valider</button>
                             </div>
         `;
