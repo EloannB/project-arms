@@ -14,7 +14,7 @@ fetch('assets/data/article.json')
       // console.log(article)
       if (article.Ref === refValue) {
         const card = document.createElement('div')
-        card.classList.add('col-lg-2', 'col-10', 'm-3')
+        card.classList.add('col-lg-4', 'col-10', 'm-3', 'm-auto')
 
         card.innerHTML = `
         <div class="card mb-3 custom-card-style">
@@ -29,12 +29,20 @@ fetch('assets/data/article.json')
                         <p class="card-text custom-card-description">${article.Description}</p>
                         <p class="card-text custom-card-ref">Référence: ${article.Ref}</p>
                         <p class="card-text custom-card-stock">Stock: ${article.Nbr}</p>
+                        <p class="card-text custom-card-category fw-bold ">Category: ${article.Categorie}</p>
+                        <div class="stars-container mb-3">
+              ${Array.from({ length: 5 }, (_, index) => `
+                <i class="bi bi-star-fill star ${index >= article.Note ? 'empty' : ''}"></i>
+              `).join('')}
+            </div>
                         <button type="button" class="btn btn-outline-danger custom-add-to-cart-btn" onclick="addToCart('${article.Image}', '${article.Prix}', '${article.Ref}', '${article.Nbr}')">Ajouter au panier</button>
                     </div>
                 </div>
             </div>
         </div>
     `;
+
+
 
 
 
