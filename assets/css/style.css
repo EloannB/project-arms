@@ -13,15 +13,13 @@
 
 body {
     background-image: url('/assets/img/man-6027213_1280.jpg');
-    /* Adjust the path as needed */
     background-position: center;
     background-repeat: repeat;
     background-size: 80rem;
     background-attachment: fixed;
 }
 
-/* Basic styling for the cards */
-.custom-card-style {
+.card {
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
@@ -188,4 +186,28 @@ body {
     opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0;
+}
+
+
+.rating-container {
+    margin-top: 10px;
+}
+
+.rating {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.star {
+    color: gold;
+    font-size: 1.2em;
+    margin-right: 2px;
+}
+
+.star.empty {
+    color: #ccc;
+}
+
+.navbar-nav a:hover {
+    text-decoration: underline;
 }
