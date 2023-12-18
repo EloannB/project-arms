@@ -21,33 +21,63 @@ body {
 }
 
 /* Basic styling for the cards */
-.card {
+.custom-card-style {
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s;
+    max-width: 540px;
+    margin-top: 13rem;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-img-top {
-    max-width: 100%;
+.custom-card-img {
+    width: 100%;
     height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    /* Larger image size */
+    max-height: 250px;
 }
 
-.card-body {
-    padding: 15px;
+.col-md-7 {
+    font-size: 1.1rem;
+    /* Adjust text size on the right */
 }
 
-.card-title {
-    font-size: 1.2em;
+.custom-card-title {
+    font-size: 1.5rem;
+    /* Larger title size */
     margin-bottom: 10px;
 }
 
-.card-text {
+.custom-card-price {
+    font-size: 1.3rem;
+    /* Larger price size */
+    color: #dc3545;
+    margin-bottom: 5px;
+}
+
+.custom-card-description,
+.custom-card-ref,
+.custom-card-stock {
+    font-size: 1.1rem;
+    /* Adjust text size */
     color: #555;
+    margin-bottom: 5px;
+}
+
+.custom-add-to-cart-btn {
+    font-size: 1.1rem;
+    /* Adjust button size */
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.custom-add-to-cart-btn:hover {
+    background-color: #d9534f;
+    color: white;
 }
 
 .view-more {

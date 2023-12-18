@@ -17,6 +17,18 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
             <button style="display:block" class="button">Supp</button>
         </td>
 `;
+    function saveCartToLocalStorage() {
+        const cartItems = cartItemsContainer.innerHTML;
+        localStorage.setItem('cartItems', cartItems);
+    }
+    function loadCartFromLocalStorage() {
+        const savedCartItems = localStorage.getItem('cartItems');
+        if (savedCartItems) {
+            cartItemsContainer.innerHTML = savedCartItems;
+            attachListenersToCartItems(); // Reattach event listeners to the loaded cart items
+            calculateTotalCartPrice(); // Recalculate the total price
+        }
+    }
 
 
     cartItemsContainer.appendChild(newItemRow);
@@ -30,23 +42,27 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
     quantityInput.addEventListener("input", () => {
         const quantity = parseInt(quantityInput.value);
         const subtotal = itemPrice * quantity;
-        total.textContent = "$" + subtotal.toFixed(2);
+        total.textContent = "€" + subtotal.toFixed(2);
         calculateTotalCartPrice();
+        saveCartToLocalStorage();
 
     });
     // -------clear item---------------
     button.addEventListener('click', function () {
         newItemRow.innerHTML = ""
         calculateTotalCartPrice();
+        saveCartToLocalStorage();
 
     });
 
+    let totalPrice = 0;
 
 
 
     function calculateTotalCartPrice() {
+        totalPrice = 0; // Reset totalPrice to zero before recalculating
+
         const totalElements = document.querySelectorAll(".total");
-        let totalPrice = 0;
 
         totalElements.forEach(element => {
             const price = parseFloat(element.textContent.replace('€', ''));
@@ -55,15 +71,9 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
         });
         console.log(totalPrice.toFixed(2));
 
-        const buttonsContainer = document.querySelector('.buttonsContainer');
-        const formInput = document.createElement('input');
-        if (buttonsContainer) {
-            buttonsContainer.appendChild(formInput);
-            formInput.classList.add('totalInput');
-            formInput.value = totalPrice.toFixed(2);
-        }
-        repositionClearButton()
 
+        repositionClearButton()
+        saveCartToLocalStorage();
     }
 
 
@@ -79,7 +89,7 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
                             <div class="d-flex justify-content-between align-items-center">
                                 <!-- Div des boutons -->
                                 <button class="btn btn-danger clearAll">Effacer tout</button>
-                                <input type="text" class="form-control text-center formInput" value=${totalInput} readonly>
+                                <input type="text" class="form-control text-center formInput" value=${totalPrice.toFixed(2)} readonly>
                                 <button class="btn btn-success">Valider</button>
                             </div>
         `;
@@ -92,6 +102,7 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
                 cartItemsContainer.removeChild(buttonsContainer);
             }
             calculateTotalCartPrice()
+            saveCartToLocalStorage();
 
 
         })
@@ -115,7 +126,10 @@ function addToCart(itemImage, itemPrice, itemRef, itemStock) {
         // Add the Clear All button at the end
         addClearAllButton();
     }
-
+    window.addEventListener('DOMContentLoaded', () => {
+        loadCartFromLocalStorage();
+        attachListenersToCartItems();
+    });
     calculateTotalCartPrice();
 
 }
